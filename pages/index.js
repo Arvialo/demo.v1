@@ -13,7 +13,7 @@ export default function Home() {
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
       </Head>
-      <div className="background"></div>
+      {/* <div className="background"></div> */}
       <Header />
       <main>
         <div className="hero-banner">
