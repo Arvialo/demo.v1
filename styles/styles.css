@@ -276,3 +276,32 @@ nav>h3{
 }
 
 /* /////////////////////////////////// FIN SERVICES ///////////////////////////////////////// */
+
+
+
+
+
+/* ///////////////////////////// FOOTER //////////////////////////////////////////////////// */
+
+footer{
+    margin-top: 45%;
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+footer>img{
+    padding: 6%;
+    height: 20%;
+    width: 15%;
+}
+
+.line{
+    height: 80%;
+    color: white;
+    border-right: solid;
+    border-width:thin;
+    width: 5%;
+}

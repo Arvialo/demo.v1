@@ -1,5 +1,12 @@
 function Footer() {
-  return <div>Footer</div>;
+  return (
+    <>
+      <footer>
+        <img src="logo.svg" alt="" />
+        <div className="line"></div>
+      </footer>
+    </>
+  );
 }
 
 export default Footer;
