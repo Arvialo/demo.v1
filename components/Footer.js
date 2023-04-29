@@ -2,8 +2,17 @@ function Footer() {
   return (
     <>
       <footer>
-        <img src="logo.svg" alt="" />
-        <div className="line"></div>
+        <h3>Arion</h3>
+        <div className="footer-container">
+          <div className="coordonnees">
+            Coordonnes{" "}
+            <ul>
+              <li>Tel</li>
+              <li>Mail</li>
+              <li>Adresse</li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </>
   );

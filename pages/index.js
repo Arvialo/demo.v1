@@ -23,8 +23,8 @@ export default function Home() {
               Ambition <span className="slogan-gradient">And</span> Adaptation.
             </h1>
             <h3 className="slogan-sous-texte">
-              Laissez votre empreinte sur le{" "}
-              <span className="slogan-gradient">Web.</span>
+              Laissez votre empreinte sur le Web avec{" "}
+              <span className="slogan-gradient">Arion.</span>
             </h3>
           </div>
           <img
@@ -35,12 +35,12 @@ export default function Home() {
           <button className="hero-banner-button">Découvrir</button>
         </div>
         <div className="presentation">
-          <h2>AAA Corp</h2>
+          <h2>Qui sommes nous ?</h2>
           <p>
-            Nous sommes 3 ingénieurs de l'ESIEA qui avons décidé d'accompagner
-            les entreprises voulant booster leurs ventes. De la création de
-            sites web au référencement en ligne, nous proposons de nombreux
-            services sur-mesure. Avec nous, la seule limite est votre
+            Nous sommes 3 futurs ingénieurs de l'ESIEA qui avons décidé
+            d'accompagner les entreprises voulant booster leurs ventes. De la
+            création de sites web au référencement en ligne, nous proposons de
+            nombreux services sur-mesure. Avec nous, la seule limite est votre
             imagination.
           </p>
         </div>
