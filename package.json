@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"node discord.js\"",
+    "predev": "node discord.js 1",
+    "dev": "trap 'exit 0' INT; next dev" ,
+    "postdev": "node discord.js 0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

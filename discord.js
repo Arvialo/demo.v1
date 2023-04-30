@@ -1,4 +1,5 @@
 function sendMessage() {
+	const opt = process.argv[2];
 	var XMLHttpRequest = require("xhr2");
 
 	const request = new XMLHttpRequest();
@@ -8,13 +9,17 @@ function sendMessage() {
 	);
 
 	request.setRequestHeader("Content-type", "application/json");
-
+	const user = require("os").userInfo().username;
 	const params = {
 		avatar_url: "",
 		content:
-			"**" +
-			require("os").userInfo().username +
-			"** started an instance of the project",
+			opt == 1
+				? "*:green_circle:\t**" +
+				  user +
+				  "** starts working on the project.*"
+				: "*:red_circle:\t**" +
+				  user +
+				  "** stops working on the project.*",
 	};
 
 	request.send(JSON.stringify(params));
