@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "predev": "node discord.js 1",
-    "dev": "trap 'exit 0' INT; next dev" ,
+    "dev": "next dev" ,
     "postdev": "node discord.js 0",
     "build": "next build",
     "start": "next start",
