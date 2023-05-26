@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
 
 
 html {
@@ -19,18 +20,6 @@ body{
     background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 20%, rgba(63, 76, 119, 1) 80%);
 }
 
-.background{
-    /* background: linear-gradient(180deg, rgba(5, 0, 98, 1) 0%, rgba(11, 8, 62, 0.7511598389355743) 100%); */
-    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
-    /* background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%); */
-    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
-    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);  version claire */
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: -10;
-    margin: 0%;
-}
 
 header{
     position: fixed;
@@ -393,7 +382,7 @@ footer>h3 {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    filter: brightness(30%);
+    filter: brightness(50%);
 }
 
 .item-overlay{
@@ -406,8 +395,8 @@ footer>h3 {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .overlay-texte{
@@ -417,7 +406,13 @@ footer>h3 {
     align-items: center;
 }
 
+.overlay-texte>h3{
+    font-weight: 400;
+    font-family: 'Cormorant', sans-serif;
+}
+
 .overlay-texte>p{
     font-size: 1.5rem;
     line-height: 200%;
+    font-family: 'Cormorant', sans-serif;
 }

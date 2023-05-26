@@ -75,8 +75,8 @@ export default function Home() {
             <img src="MyDonut.png" alt="" />
             <div className="item-overlay">
               <div className="overlay-texte">
-                <h3>My Donut</h3>
-                <p>Site Vitrine</p>
+                <h3>M.D</h3>
+                <p>My Donut</p>
               </div>
             </div>
           </div>
