@@ -68,6 +68,19 @@ export default function Home() {
           </div>
           <button className="ensavoirplus-button">En savoir plus</button>
         </div>
+
+        <div className="nos-realisations-banner">
+          <h2 className="nos-realisations-titre">Nos Réalisations</h2>
+          <div className="nos-realisations-item">
+            <img src="MyDonut.png" alt="" />
+            <div className="item-overlay">
+              <div className="overlay-texte">
+                <h3>My Donut</h3>
+                <p>Site Vitrine</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </>
