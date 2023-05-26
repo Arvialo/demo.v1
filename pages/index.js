@@ -19,7 +19,6 @@ export default function Home() {
         <div className="hero-banner">
           <div className="hero-banner-texte">
             <h1 className="slogan">
-              {/* Ambition And Adaptation. */}
               Ambition <span className="slogan-gradient">And</span> Adaptation.
             </h1>
             <h3 className="slogan-sous-texte">
