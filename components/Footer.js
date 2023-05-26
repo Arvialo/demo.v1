@@ -12,7 +12,7 @@ function Footer() {
         <div className="footer-plan">
           <h2>Accueil</h2>
           <h2>Services</h2>
-          <h2>Realisatiions</h2>
+          <h2>Réalisations</h2>
           <h2>Contactez-nous</h2>
         </div>
         <div className="footer-end">
