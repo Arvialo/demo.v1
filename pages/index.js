@@ -14,7 +14,6 @@ export default function Home() {
         />
         <meta name="format-detection" content="telephone=no" />
       </Head>
-      {/* <div className="background"></div> */}
       <Header />
       <main>
         <div className="hero-banner">
