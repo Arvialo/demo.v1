@@ -116,6 +116,78 @@ nav>h3{
 
 /* /////////////////////////    FIN DE NAV     ///////////////////////////////: */
 
+
+
+
+/* ///////////////////////////// FOOTER //////////////////////////////////////////////////// */
+
+footer {
+    margin-top: 45%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 10%;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer>img {
+    margin-left: 6%;
+    height: 30%;
+    width: 30%;
+}
+
+footer>h3 {
+    margin-top: 2rem;
+    margin-left: 6%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-coordonnees {
+    margin-left: 6%;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer-plan {
+    margin-top: 2rem;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-plan>h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 300%;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 6% 0%;
+    background-color: rgba(32, 38, 57, 1);
+    font-weight: 300;
+}
+
+.footer-end>p {
+    line-height: 150%;
+}
+
+/* //////////////////////////////////// FIN FOOTER ////////////////////////////////////////////////////////// */
+
+
+
+
 /* /////////////////////    HERO BANNER MOBILE /////////////////////////////////////// */
 
 .hero-banner{
@@ -290,68 +362,3 @@ nav>h3{
 
 
 
-
-
-/* ///////////////////////////// FOOTER //////////////////////////////////////////////////// */
-
-footer{
-    margin-top: 45%;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding-top: 10%;
-    padding-bottom: 0%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-footer>img{
-    margin-left: 6%;
-    height: 30%;
-    width: 30%;
-}
-
-footer>h3{
-    margin-top: 2rem;
-    margin-left:6%;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight:600;
-}
-
-.footer-coordonnees{
-    margin-left: 6%;
-    font-weight: 500;
-    margin-top: 1.5rem;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-.footer-plan{
-    margin-top: 2rem;
-    margin-left: 6%;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-plan>h2{
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 300%;
-}
-
-.footer-end{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    padding: 6% 0%;
-    background-color: rgba(32, 38, 57, 1);
-    font-weight: 300;
-}
-
-.footer-end>p{
-    line-height: 150%;
-}
