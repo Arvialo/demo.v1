@@ -25,15 +25,16 @@ header{
     position: fixed;
     width: 100%;
     top: 0%;
-    z-index: 2;
+    z-index: 10;
 }
 
 .header-container{
-    padding: 3%;
+    padding: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4vh;
+    background-color: rgba(32, 38, 57, 1);
 }
 
 .logo{
@@ -79,6 +80,7 @@ nav>h3{
 .toggle{
     height: 3.5vh;
     width: 3.5vh;
+    z-index: 2;
 }
 
 .nav-item-button{
@@ -101,6 +103,22 @@ nav>h3{
 
 .nav-item:hover{
     transform: scale(1.1);
+}
+
+
+.visible {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #50A7C2;
+    padding: 0%;
+    margin: 0%;
+}
+
+.hidden {
+    display: none;
 }
 
 /* /////////////////////////    FIN DE NAV     ///////////////////////////////: */
@@ -222,8 +240,8 @@ footer>h3 {
 }
 
 .hero-banner-image-mobile{
-    height: 35vh;
-    width: 35vh;
+    height: 30vh;
+    width: 30vh;
     margin-top: 5%;
     transition: all 1s;
 }
@@ -238,11 +256,82 @@ footer>h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-        
-                    
+
 
 
 /* //////////////////////////HERO BANNER MOBILE FIN////////////////////////////////// */
+
+
+
+
+        
+@media screen and (min-width: 768px) {
+    .hero-banner{
+        position: relative;
+        flex-direction: column;
+        padding: 6%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-banner-button{
+        padding: 1% 4%;
+        border-radius: 50px;
+        margin-top: 10%;
+        align-items: start;
+        z-index: 1;
+    }
+
+    .hero-banner-texte{
+ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-banner-texte{
+        z-index: 1;
+        margin-top: 5%;
+    }
+
+    .slogan{
+        font-size: 6rem;
+        word-spacing: normal;
+        text-align: center;
+    }
+
+    .slogan-sous-texte{
+        margin-top: 5%;
+        font-size: 2rem;
+    }
+
+    .hero-banner-image-mobile{
+        margin-top: 0%;
+        width: 70vh;
+        height: 70vh;
+        position: absolute;
+        filter: brightness(70%);
+        transform: translate(-60%,25%);
+    }
+
+
+    .toggle {
+        display: none;
+    }
+
+    .hidden {
+        display: flex;
+    }
+    
+}
+
+
+
+
+/* //////////////////////////////////////////// HERO BANNER TABLETTE PC //////////////////////////////////////////// */
+
+
 
 .presentation{
     margin-top: 30%;  
@@ -275,6 +364,37 @@ footer>h3 {
     font-family:'Montserrat',sans-serif; 
     padding: 2% 0%;
     line-height: 140%;
+}
+
+.presentation>img{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .presentation{
+        margin-top: 20%;
+    }
+
+    .presentation>p{
+        position: relative;
+        margin-top: 5%;
+        font-size: 1.4rem;
+        z-index: 2;
+    }
+
+    .presentation>img{
+        display: block;
+        height: 30vw;
+        width: 30vw;
+        transform: rotateZ(30deg) translateX(80%) translateY(-110%);
+        filter: brightness(70%);
+        position: absolute;
+        transition: all 0.5s;
+    }
+
+    .presentation>img:hover{
+        filter: brightness(100%);
+    }
 }
 
 /* //////////////////////////////// GRID services  ////////////////////////////////////////////// */
@@ -348,6 +468,25 @@ footer>h3 {
     margin-top: 5%;
 }
 
+@media screen and (min-width: 1024px) {
+    .service-titre{
+        margin-top: 25%;
+    }
+
+    .nos-services-grid{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        padding-bottom: 6%;
+    }
+
+    .ensavoirplus-button{
+        margin: 0%;
+        align-self: center;
+        padding: 1% 4%;
+    }
+}
+
 /* /////////////////////////////////// FIN SERVICES ///////////////////////////////////////// */
 
 
@@ -416,4 +555,10 @@ footer>h3 {
     font-size: 1.5rem;
     line-height: 200%;
     font-family: 'Cormorant', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    .nos-realisations-titre{
+        margin-top: 25%;
+    }
 }

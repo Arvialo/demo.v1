@@ -19,7 +19,11 @@ export default function Home() {
         <div className="hero-banner">
           <div className="hero-banner-texte">
             <h1 className="slogan">
-              Ambition <span className="slogan-gradient">And</span> Adaptation.
+              {/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
+              <span className="slogan-gradient">A</span>mbition{" "}
+              <span className="slogan-gradient">A</span>nd{" "}
+              <span className="slogan-gradient">A</span>daptation
+              <span className="slogan-gradient">.</span>
             </h1>
             <h3 className="slogan-sous-texte">
               Laissez votre empreinte sur le Web avec{" "}
@@ -27,10 +31,11 @@ export default function Home() {
             </h3>
           </div>
           <img
-            src="test1.svg"
+            src="3D.svg"
             alt="dessin appareil web"
             className="hero-banner-image-mobile"
           />
+
           <button className="hero-banner-button">Découvrir</button>
         </div>
         <div className="presentation">
@@ -42,6 +47,7 @@ export default function Home() {
             nombreux services sur-mesure. Avec nous, la seule limite est votre
             imagination.
           </p>
+          <img src="bonhomme.svg" alt="" className="presentation-image" />
         </div>
 
         <div className="nos-services-banner">
