@@ -31,9 +31,9 @@ export default function Home() {
             </h3>
           </div>
           <img
-            src="3D.svg"
+            src="terre.png"
             alt="dessin appareil web"
-            className="hero-banner-image-mobile"
+            className="hero-banner-image"
           />
 
           <button className="hero-banner-button">Découvrir</button>
@@ -47,7 +47,7 @@ export default function Home() {
             nombreux services sur-mesure. Avec nous, la seule limite est votre
             imagination.
           </p>
-          <img src="bonhomme.svg" alt="" className="presentation-image" />
+          <img src="Frame.svg" alt="" className="presentation-image" />
         </div>
 
         <div className="nos-services-banner">
