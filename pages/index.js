@@ -1,8 +1,14 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Head>
@@ -18,14 +24,25 @@ export default function Home() {
       <main>
         <div className="hero-banner">
           <div className="hero-banner-texte">
-            <h1 className="slogan">
+            <h1
+              className="slogan"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="800"
+            >
               {/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
               <span className="slogan-gradient">A</span>mbition{" "}
               <span className="slogan-gradient">A</span>nd{" "}
               <span className="slogan-gradient">A</span>daptation
               <span className="slogan-gradient">.</span>
             </h1>
-            <h3 className="slogan-sous-texte">
+            <h3
+              className="slogan-sous-texte"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-delay="100"
+              data-aos-duration="800"
+            >
               Laissez votre empreinte sur le Web avec{" "}
               <span className="slogan-gradient">Arion.</span>
             </h3>
@@ -35,10 +52,15 @@ export default function Home() {
             alt="dessin appareil web"
             className="hero-banner-image"
           />
-
-          <button className="hero-banner-button">Découvrir</button>
+          <img src="fleche.svg" alt="" className="fleche" />
         </div>
-        <div className="presentation">
+        <div
+          className="presentation"
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-duration="700"
+          data-aos-offset="200"
+        >
           <h2>Qui sommes nous ?</h2>
           <p>
             Nous sommes 3 futurs ingénieurs de l'ESIEA qui avons décidé
@@ -53,7 +75,13 @@ export default function Home() {
         <div className="nos-services-banner">
           <h2 className="service-titre">Nos Services</h2>
           <div className="nos-services-grid">
-            <div className="service-item">
+            <div
+              className="service-item"
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-once="true"
+              data-aos-duration="500"
+            >
               <img src="test3.svg" alt="" />
               <h3>Creation de site web</h3>
               <p>
@@ -62,7 +90,14 @@ export default function Home() {
                 sit
               </p>
             </div>
-            <div className="service-item">
+            <div
+              className="service-item"
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-once="true"
+              data-aos-delay="100"
+              data-aos-duration="500"
+            >
               <img src="test4.svg" alt="" />
               <h3>SEO</h3>
               <p>
@@ -77,7 +112,13 @@ export default function Home() {
 
         <div className="nos-realisations-banner">
           <h2 className="nos-realisations-titre">Nos Réalisations</h2>
-          <div className="nos-realisations-item">
+          <div
+            className="nos-realisations-item"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            data-aos-once="true"
+          >
             <img src="MyDonut.png" alt="" />
             <div className="item-overlay">
               <div className="overlay-texte">

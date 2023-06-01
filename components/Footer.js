@@ -10,10 +10,18 @@ function Footer() {
           <p>07 82 52 63 67</p>
         </div>
         <div className="footer-plan">
-          <h2>Accueil</h2>
-          <h2>Services</h2>
-          <h2>Réalisations</h2>
-          <h2>Contactez-nous</h2>
+          <h2 data-aos="fade-right" data-aos-once="true">
+            Accueil
+          </h2>
+          <h2 data-aos="fade-right" data-aos-once="true" data-aos-delay="50">
+            Services
+          </h2>
+          <h2 data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
+            Réalisations
+          </h2>
+          <h2 data-aos="fade-right" data-aos-once="true" data-aos-delay="150">
+            Contactez-nous
+          </h2>
         </div>
         <div className="footer-end">
           <p>c 2023</p>

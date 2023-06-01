@@ -278,6 +278,11 @@ footer>h3 {
     transition: all 0.3s;
 }
 
+.fleche{
+    margin-top: 5%;
+    scale: 0.7;
+}
+
 .hero-banner-button:hover{
     transform: scale(1.1);
 }
@@ -305,6 +310,10 @@ footer>h3 {
         margin-top: 10%;
         align-items: start;
         z-index: 1;
+    }
+
+    .fleche{
+        scale: 1;
     }
 
     .hero-banner-texte{

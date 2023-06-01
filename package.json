@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "predev": "node discord.js 1",
-    "dev": "next dev" ,
+    "dev": "next dev",
     "postdev": "node discord.js 0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "concurrently": "^8.0.1",
     "next": "13.3.0",
     "react": "18.2.0",
