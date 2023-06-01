@@ -281,6 +281,13 @@ footer>h3 {
 .fleche{
     padding-top: 5%;
     scale: 0.7;
+    transition: transform .4s;
+    cursor: pointer;
+
+}
+
+.fleche:hover {
+    transform: scale(1.25);
 }
 
 .hero-banner-button:hover{
