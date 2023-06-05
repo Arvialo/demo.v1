@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <header>
-      <div className="header-container">
+      <div className="header-container light_theme-header">
         <img src="logo.svg" alt="" className="logo" />
         <img
           src={isOpen ? "cross.svg" : "hamburger.svg"}

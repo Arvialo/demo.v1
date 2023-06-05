@@ -8,6 +8,12 @@ html {
     margin : 0%;
     padding: 0%;
     background:rgba(32, 38, 57, 1) ;
+    color: white;
+}
+
+.light_theme-html{
+    background: white;
+    color: #091540;
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +49,9 @@ body{
     background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 20%, rgba(63, 76, 119, 1) 80%);
 }
 
+.light_theme-body{
+    background-image: linear-gradient(to top,#c1dfc4 -50%, #accbee 80%);
+}
 
 header{
     position: fixed;
@@ -58,6 +67,10 @@ header{
     align-items: center;
     height: 4vh;
     background-color: rgba(32, 38, 57, 1);
+}
+
+.light_theme-header{
+    background-color: #accbee;
 }
 
 .logo{
@@ -93,7 +106,6 @@ nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1em;
-    color: white;
 }
 
 nav>h3{
@@ -116,7 +128,6 @@ nav>h3{
 
 .nav-item-button:hover{
     transform: scale(1.1);
-    color: white;
     background-color: rgba(231, 112, 112, 1);
 }
 
@@ -158,8 +169,8 @@ footer {
     padding-bottom: 0%;
     display: flex;
     flex-direction: column;
-    color: white;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 footer>img {
@@ -171,7 +182,6 @@ footer>img {
 footer>h3 {
     margin-top: 2rem;
     margin-left: 6%;
-    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 600;
@@ -181,7 +191,6 @@ footer>h3 {
     margin-left: 6%;
     font-weight: 500;
     margin-top: 1.5rem;
-    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -252,7 +261,6 @@ footer>h3 {
 
 
 .hero-banner-texte{
-    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -270,7 +278,6 @@ footer>h3 {
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-
 }
 
 
@@ -400,7 +407,6 @@ footer>h3 {
 .presentation{
     margin-top: 30%;  
     padding: 0% 12%;
-    color: white;
     position: relative;
 }
 
@@ -481,7 +487,6 @@ footer>h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: white;
     text-align: center;
     margin-top: 45%;
 }
@@ -495,8 +500,8 @@ footer>h3 {
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 10% 6%;
-    color: white;
     row-gap: 5%;
+    color: white;
 }
 
 
@@ -580,7 +585,6 @@ footer>h3 {
 .nos-realisations-titre{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: white;
     text-align: center;
     margin-top: 45%;
     font-size: 2.5rem;
@@ -617,7 +621,6 @@ footer>h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 2rem;
     font-family: 'Montserrat',sans-serif;
 }
@@ -651,6 +654,7 @@ footer>h3 {
 
     .item-overlay{
         transition: all 0.5s ease;
+        color: white;
     }
 
     .nos-realisations-item:hover .item-overlay{
