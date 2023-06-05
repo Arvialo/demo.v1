@@ -50,7 +50,7 @@ body{
 }
 
 .light_theme-body{
-    background-image: linear-gradient(to top,#c1dfc4 -50%, #accbee 80%);
+    background-image: linear-gradient(to top, #e7f0fd -50%,#accbee  100%);
 }
 
 header{
@@ -131,6 +131,20 @@ nav>h3{
     background-color: rgba(231, 112, 112, 1);
 }
 
+
+.nav-item-button-light{
+    padding: 1.2%;
+    border-radius: 2em;
+    background-color: white;
+    color: rgba(5, 0, 98, 1);
+    transition: all 0.3s;
+}
+
+.nav-item-button-light:hover{
+    background: linear-gradient(135deg, #667eea 50%, #764ba2 100%);
+    color: white;
+}
+
 .nav-item{
     transition: all 0.5s;
 }
@@ -171,6 +185,11 @@ footer {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     color: white;
+}
+
+.light-theme-footer{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #091540;
 }
 
 footer>img {
@@ -222,6 +241,11 @@ footer>h3 {
     line-height: 150%;
 }
 
+.light-theme-footer-end{
+    background-color: #accbee;
+    color: #091540;
+}
+
 @media screen and (min-width: 1024px) {
     footer{
         margin-top: 10%;
@@ -238,7 +262,7 @@ footer>h3 {
     }
 
     .footer-end{
-        padding: 2% 0%;
+        padding: 1% 0%;
     }
 }
 
@@ -274,6 +298,14 @@ footer>h3 {
 
 .slogan-gradient{
     background: -webkit-linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.slogan-gradient-light{
+    background: -webkit-linear-gradient(135deg, #667eea 50%, #764ba2 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -386,6 +418,10 @@ footer>h3 {
         transform: translate(-60%,25%);
     }
 
+    .hero-banner-image-light{
+        filter: brightness(100%);
+    }
+
 
     .toggle {
         display: none;
@@ -478,6 +514,13 @@ footer>h3 {
         position: absolute;
         transition: all 0.5s;
     }
+
+    .presentation-light{
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(3px);
+        padding: 6% !important;
+    }
 }
 
 /* //////////////////////////////// GRID services  ////////////////////////////////////////////// */
@@ -501,12 +544,12 @@ footer>h3 {
     grid-template-rows: 1fr 1fr;
     padding: 10% 6%;
     row-gap: 5%;
-    color: white;
+    /* color: white; */
 }
 
 
 .service-item{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     padding: 10%;
     display: flex;
@@ -540,8 +583,8 @@ footer>h3 {
     padding: 3% 5%;
     font-size: 1rem;
     border: none;
-    background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
-    color: rgba(32, 38, 57, 1);
+    /* background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); */
+    /* color: rgba(32, 38, 57, 1); */
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     width: fit-content;
@@ -549,6 +592,8 @@ footer>h3 {
     margin-right: 12%;
     margin-top: 5%;
     transition: all 0.3s;
+    background: linear-gradient(135deg, #667eea 50%, #764ba2 100%);
+    color: white;
 }
 
 .ensavoirplus-button:hover{
@@ -623,6 +668,7 @@ footer>h3 {
     align-items: center;
     font-size: 2rem;
     font-family: 'Montserrat',sans-serif;
+    color: white;
 }
 
 .overlay-texte{

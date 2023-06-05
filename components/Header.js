@@ -17,7 +17,9 @@ function Header() {
           <div className="nav-item">Accueil</div>
           <div className="nav-item">Nos offres</div>
           <div className="nav-item">Nos créations</div>
-          <div className="nav-item-button">Contactez-nous</div>
+          <div className="nav-item-button nav-item-button-light">
+            Contactez-nous
+          </div>
         </nav>
       </div>
     </header>

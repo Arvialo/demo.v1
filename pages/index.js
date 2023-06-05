@@ -37,10 +37,14 @@ export default function Home() {
               data-aos-duration="1000"
             >
               {/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
-              <span className="slogan-gradient">A</span>mbition{" "}
-              <span className="slogan-gradient">A</span>nd{" "}
-              <span className="slogan-gradient">A</span>daptation
-              <span className="slogan-gradient">.</span>
+              <span className="slogan-gradient slogan-gradient-light">A</span>
+              mbition{" "}
+              <span className="slogan-gradient slogan-gradient-light">
+                A
+              </span>nd{" "}
+              <span className="slogan-gradient slogan-gradient-light">A</span>
+              daptation
+              <span className="slogan-gradient slogan-gradient-light">.</span>
             </h1>
             <h3
               className="slogan-sous-texte"
@@ -50,16 +54,18 @@ export default function Home() {
               data-aos-duration="1000"
             >
               Laissez votre empreinte sur le Web avec{" "}
-              <span className="slogan-gradient">Arion.</span>
+              <span className="slogan-gradient slogan-gradient-light">
+                Arion.
+              </span>
             </h3>
           </div>
           <img
             src="terre.png"
             alt="dessin appareil web"
-            className="hero-banner-image"
+            className="hero-banner-image hero-banner-image-light"
           />
           <img
-            src="fleche.svg"
+            src="flechelight.svg"
             alt=""
             className="fleche"
             onClick={handleClick}
@@ -74,7 +80,7 @@ export default function Home() {
           data-aos-anchor-placement="top-center"
         >
           <h2>Qui sommes nous ?</h2>
-          <p>
+          <p className="presentation-light">
             Nous sommes 3 futurs ingénieurs de l'ESIEA qui avons décidé
             d'accompagner les entreprises voulant booster leurs ventes. De la
             création de sites web au référencement en ligne, nous proposons de
@@ -94,7 +100,7 @@ export default function Home() {
               data-aos-once="true"
               data-aos-duration="500"
             >
-              <img src="test3.svg" alt="" />
+              <img src="test3light.svg" alt="" />
               <h3>Creation de site web</h3>
               <p>
                 Takimata dolore eos sea labore. Volutpat sanctus vero et sea et
@@ -110,7 +116,7 @@ export default function Home() {
               data-aos-delay="100"
               data-aos-duration="500"
             >
-              <img src="test4.svg" alt="" />
+              <img src="test4light.svg" alt="" />
               <h3>SEO</h3>
               <p>
                 Takimata dolore eos sea labore. Volutpat sanctus vero et sea et

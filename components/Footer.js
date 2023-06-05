@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className="light-theme-footer">
         <img src="logo.svg" alt="" className="logo" />
         <h3>Arion</h3>
         <div className="footer-coordonnees">
@@ -42,7 +42,7 @@ function Footer() {
             Contactez-nous
           </h2>
         </div>
-        <div className="footer-end">
+        <div className="footer-end light-theme-footer-end">
           <p>c 2023</p>
           <p>Agence Web Arion. Tous droits réservés</p>
         </div>
