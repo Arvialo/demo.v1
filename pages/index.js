@@ -94,7 +94,7 @@ export default function Home() {
           <h2 className="service-titre">Nos Services</h2>
           <div className="nos-services-grid">
             <div
-              className="service-item"
+              className="service-item service-item-light"
               data-aos="flip-right"
               data-aos-anchor-placement="top-center"
               data-aos-once="true"
@@ -109,7 +109,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="service-item"
+              className="service-item service-item-light"
               data-aos="flip-right"
               data-aos-anchor-placement="top-center"
               data-aos-once="true"
@@ -125,7 +125,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <button className="ensavoirplus-button">En savoir plus</button>
+          <button className="ensavoirplus-button ensavoirplus-button-light">
+            En savoir plus
+          </button>
         </div>
 
         <div className="nos-realisations-banner">
