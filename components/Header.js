@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 function Header({ theme, setTheme }) {
 	const [isOpen, setIsOpen] = useState(0);
@@ -15,9 +16,29 @@ function Header({ theme, setTheme }) {
 					onClick={() => setIsOpen(!isOpen)}
 				/>
 				<nav className={!isOpen ? "hidden" : "visible"}>
-					<div className="nav-item">Accueil</div>
-					<div className="nav-item">Nos offres</div>
-					<div className="nav-item">Nos créations</div>
+					<Link
+						style={{ textDecoration: "none" }}
+						href="/"
+						className="nav-item"
+						// state={{ theme: { theme }, setTheme: { setTheme } }}
+					>
+						Accueil
+					</Link>
+					<Link
+						style={{ textDecoration: "none" }}
+						href="/offers"
+						className="nav-item"
+						// state={{ theme: theme }}
+					>
+						Nos offres
+					</Link>
+					<Link
+						style={{ textDecoration: "none" }}
+						href="creations"
+						className="nav-item"
+					>
+						Nos créations
+					</Link>
 					<div
 						className={
 							"nav-item-button" +

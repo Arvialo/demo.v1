@@ -44,8 +44,8 @@ export default function Home() {
 							{/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
 							<span
 								className={
-									"slogan-gradient" +
-									(theme && " slogan-gradient-light")
+									(theme && "slogan-gradient-light") +
+									" slogan-gradient"
 								}
 							>
 								A
@@ -53,8 +53,8 @@ export default function Home() {
 							mbition{" "}
 							<span
 								className={
-									"slogan-gradient" +
-									(theme && " slogan-gradient-light")
+									(theme && "slogan-gradient-light") +
+									" slogan-gradient"
 								}
 							>
 								A
@@ -62,8 +62,8 @@ export default function Home() {
 							nd{" "}
 							<span
 								className={
-									"slogan-gradient" +
-									(theme && " slogan-gradient-light")
+									(theme && "slogan-gradient-light") +
+									" slogan-gradient"
 								}
 							>
 								A
@@ -71,8 +71,8 @@ export default function Home() {
 							daptation
 							<span
 								className={
-									"slogan-gradient" +
-									(theme && " slogan-gradient-light")
+									(theme && "slogan-gradient-light") +
+									" slogan-gradient"
 								}
 							>
 								.
@@ -86,7 +86,12 @@ export default function Home() {
 							data-aos-duration="1000"
 						>
 							Laissez votre empreinte sur le Web avec{" "}
-							<span className="slogan-gradient slogan-gradient-light">
+							<span
+								className={
+									(theme && "slogan-gradient-light") +
+									" slogan-gradient"
+								}
+							>
 								Arion.
 							</span>
 						</h3>
@@ -94,7 +99,7 @@ export default function Home() {
 					<img
 						src="terre.png"
 						alt="dessin appareil web"
-						className="hero-banner-image hero-banner-image-light"
+						className={"hero-banner-image"}
 					/>
 					<img
 						src="flechelight.svg"
@@ -112,7 +117,7 @@ export default function Home() {
 					data-aos-anchor-placement="top-center"
 				>
 					<h2>Qui sommes nous ?</h2>
-					<p className="presentation-light">
+					<p className={theme && "presentation-light"}>
 						Nous sommes 3 futurs ingénieurs de l'ESIEA qui avons
 						décidé d'accompagner les entreprises voulant booster
 						leurs ventes. De la création de sites web au
@@ -131,7 +136,10 @@ export default function Home() {
 					<h2 className="service-titre">Nos Services</h2>
 					<div className="nos-services-grid">
 						<div
-							className="service-item service-item-light"
+							className={
+								(theme && "service-item-light") +
+								" service-item"
+							}
 							data-aos="flip-right"
 							data-aos-anchor-placement="top-center"
 							data-aos-once="true"
@@ -146,7 +154,10 @@ export default function Home() {
 							</p>
 						</div>
 						<div
-							className="service-item service-item-light"
+							className={
+								(theme && "service-item-light") +
+								" service-item"
+							}
 							data-aos="flip-right"
 							data-aos-anchor-placement="top-center"
 							data-aos-once="true"
@@ -162,7 +173,12 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<button className="ensavoirplus-button ensavoirplus-button-light">
+					<button
+						className={
+							(theme && "ensavoirplus-button-light") +
+							" ensavoirplus-button"
+						}
+					>
 						En savoir plus
 					</button>
 				</div>

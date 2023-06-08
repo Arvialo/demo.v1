@@ -149,7 +149,9 @@ nav>h3{
 
 .nav-item{
     transition: all 0.5s;
+    color: #091540;
 }
+
 
 .nav-item:hover{
     transform: scale(1.2);
