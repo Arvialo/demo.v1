@@ -62,16 +62,22 @@ header{
 }
 
 .header-container{
-    padding: 2%;
+    padding: 1.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4vh;
     background-color: rgba(32, 38, 57, 1);
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
 }
 
 .light_theme-header{
     background-color: #accbee;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .logo{
