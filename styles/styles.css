@@ -62,7 +62,7 @@ header{
 }
 
 .header-container{
-    padding: 1.5%;
+    padding: 1.5% 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
