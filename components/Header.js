@@ -1,9 +1,18 @@
 import { useState } from "react";
 import Link from "next/link";
 
-function Header({ theme, setTheme }) {
+import { BsLaptop, BsMoonFill, BsSun } from "react-icons/bs";
+import useLocalStorage from "@/hooks/useLocalStorage";
+
+function Header() {
+	const [theme, setTheme] = useLocalStorage("theme", "dark");
 	const [isOpen, setIsOpen] = useState(0);
-	console.log(theme);
+
+	const themes = {
+		light: <BsSun />,
+		dark: <BsMoonFill />,
+		system: <BsLaptop />,
+	};
 
 	return (
 		<header>
@@ -47,10 +56,23 @@ function Header({ theme, setTheme }) {
 					>
 						Contactez-nous
 					</div>
-					<img
-						src="brightness.svg"
-						onClick={() => setTheme(!theme)}
-					/>
+					<button
+						style={{
+							border: "none",
+							outline: "none",
+							background: "none",
+							fontSize: "20px",
+						}}
+						onClick={() =>
+							setTheme(
+								Object.keys(themes)[
+									(Object.keys(themes).indexOf(theme) + 1) % 3
+								]
+							)
+						}
+					>
+						{themes[theme]}
+					</button>
 				</nav>
 			</div>
 		</header>

@@ -4,8 +4,11 @@ import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef, useState } from "react";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 export default function Home() {
+	const [theme, setTheme] = useLocalStorage("theme", "dark");
+
 	const ref = useRef(null);
 
 	const handleClick = () => {
@@ -16,7 +19,6 @@ export default function Home() {
 		AOS.init();
 	}, []);
 
-	const [theme, setTheme] = useState(1);
 	return (
 		<>
 			<Head>
@@ -31,7 +33,7 @@ export default function Home() {
 				/>
 				<meta name="format-detection" content="telephone=no" />
 			</Head>
-			<Header theme={theme} setTheme={setTheme} />
+			<Header />
 			<main>
 				<div className="hero-banner">
 					<div className="hero-banner-texte">
