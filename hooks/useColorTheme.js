@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useLocalStorage from "./useLocalStorage";
 
 export default function useColorTheme() {
-	const [theme, setTheme] = useLocalStorage("theme", "dark");
+	const [theme, setTheme] = useLocalStorage("theme", "light");
+	const [systemLight, setSystemLight] = useState(true);
 
 	useEffect(() => {
 		if (
@@ -10,15 +11,19 @@ export default function useColorTheme() {
 			(theme === "system" &&
 				window.matchMedia("(prefers-color-scheme: dark)").matches)
 		) {
-			document.documentElement.classList.add("dark");
+			setSystemLight(false);
+			document.body.classList.remove("light_theme-body");
+			document.documentElement.classList.remove("light_theme-html");
 		} else {
-			document.documentElement.classList.remove("dark");
+			setSystemLight(true);
+			document.body.classList.add("light_theme-body");
+			document.documentElement.classList.add("light_theme-html");
 		}
 	}, [theme]);
 
 	return {
 		theme: theme,
 		setTheme,
-		isDark: theme !== "light",
+		isLight: theme === "light" || systemLight,
 	};
 }

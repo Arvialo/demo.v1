@@ -153,9 +153,16 @@ nav>h3{
     color: white;
 }
 
-.nav-item{
+.nav-item-dark{
+    transition: all 0.5s;
+    color: white;
+
+}
+
+.nav-item-light {
     transition: all 0.5s;
     color: #091540;
+
 }
 
 

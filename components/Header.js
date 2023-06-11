@@ -1,22 +1,42 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import { BsLaptop, BsMoonFill, BsSun } from "react-icons/bs";
-import useLocalStorage from "@/hooks/useLocalStorage";
+import {
+	BsLaptop,
+	BsMoonFill,
+	BsSun,
+	BsMoon,
+	BsLaptopFill,
+} from "react-icons/bs";
+import useColorTheme from "@/hooks/useColorTheme";
+import classNames from "@/hooks/classNames";
 
 function Header() {
-	const [theme, setTheme] = useLocalStorage("theme", "dark");
+	const { theme, setTheme, isLight } = useColorTheme();
 	const [isOpen, setIsOpen] = useState(0);
+
+	console.log(isLight);
 
 	const themes = {
 		light: <BsSun />,
-		dark: <BsMoonFill />,
-		system: <BsLaptop />,
+		dark: <BsMoonFill style={{ color: "white" }} />,
+		system: isLight ? (
+			<BsLaptop />
+		) : (
+			<BsLaptop style={{ color: "white" }} />
+		),
 	};
+
+	let navItem = isLight ? "nav-item-light" : "nav-item-dark";
 
 	return (
 		<header>
-			<div className="header-container light_theme-header">
+			<div
+				className={classNames(
+					"header-container",
+					isLight ? "light_theme-header" : ""
+				)}
+			>
 				<img src="logo.svg" alt="" className="logo" />
 				<img
 					src={isOpen ? "cross.svg" : "hamburger.svg"}
@@ -28,31 +48,29 @@ function Header() {
 					<Link
 						style={{ textDecoration: "none" }}
 						href="/"
-						className="nav-item"
-						// state={{ theme: { theme }, setTheme: { setTheme } }}
+						className={navItem}
 					>
 						Accueil
 					</Link>
 					<Link
 						style={{ textDecoration: "none" }}
 						href="/offers"
-						className="nav-item"
-						// state={{ theme: theme }}
+						className={navItem}
 					>
 						Nos offres
 					</Link>
 					<Link
 						style={{ textDecoration: "none" }}
 						href="creations"
-						className="nav-item"
+						className={navItem}
 					>
 						Nos créations
 					</Link>
 					<div
-						className={
-							"nav-item-button" +
-							(theme && " nav-item-button-light")
-						}
+						className={classNames(
+							isLight ? "nav-item-button-light" : "",
+							"nav-item-button"
+						)}
 					>
 						Contactez-nous
 					</div>

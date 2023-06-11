@@ -21,7 +21,5 @@ export default function useLocalStorage(key, defaultValue) {
 		localStorage.setItem(key, data);
 	}, [data]);
 
-	console.log(data);
-
 	return [data, setData];
 }

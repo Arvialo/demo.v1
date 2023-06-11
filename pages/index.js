@@ -3,11 +3,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef, useState } from "react";
-import useLocalStorage from "@/hooks/useLocalStorage";
+import { useEffect, useRef } from "react";
+import useColorTheme from "@/hooks/useColorTheme";
+import classNames from "@/hooks/classNames";
 
 export default function Home() {
-	const [theme, setTheme] = useLocalStorage("theme", "dark");
+	const { isLight } = useColorTheme();
 
 	const ref = useRef(null);
 
@@ -45,37 +46,37 @@ export default function Home() {
 						>
 							{/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
 							<span
-								className={
-									(theme && "slogan-gradient-light") +
-									" slogan-gradient"
-								}
+								className={classNames(
+									"slogan-gradient",
+									isLight ? "slogan-gradient-light" : ""
+								)}
 							>
 								A
 							</span>
 							mbition{" "}
 							<span
-								className={
-									(theme && "slogan-gradient-light") +
-									" slogan-gradient"
-								}
+								className={classNames(
+									"slogan-gradient",
+									isLight ? "slogan-gradient-light" : ""
+								)}
 							>
 								A
 							</span>
 							nd{" "}
 							<span
-								className={
-									(theme && "slogan-gradient-light") +
-									" slogan-gradient"
-								}
+								className={classNames(
+									"slogan-gradient",
+									isLight ? "slogan-gradient-light" : ""
+								)}
 							>
 								A
 							</span>
 							daptation
 							<span
-								className={
-									(theme && "slogan-gradient-light") +
-									" slogan-gradient"
-								}
+								className={classNames(
+									"slogan-gradient",
+									isLight ? "slogan-gradient-light" : ""
+								)}
 							>
 								.
 							</span>
@@ -89,10 +90,10 @@ export default function Home() {
 						>
 							Laissez votre empreinte sur le Web avec{" "}
 							<span
-								className={
-									(theme && "slogan-gradient-light") +
-									" slogan-gradient"
-								}
+								className={classNames(
+									"slogan-gradient",
+									isLight ? "slogan-gradient-light" : ""
+								)}
 							>
 								Arion.
 							</span>
@@ -101,10 +102,13 @@ export default function Home() {
 					<img
 						src="terre.png"
 						alt="dessin appareil web"
-						className={"hero-banner-image"}
+						className={classNames(
+							"hero-banner-image",
+							isLight ? "hero-banner-image-light" : ""
+						)}
 					/>
 					<img
-						src="flechelight.svg"
+						src={"fleche" + (isLight ? "light" : "") + ".svg"}
 						alt=""
 						className="fleche"
 						onClick={handleClick}
@@ -119,7 +123,7 @@ export default function Home() {
 					data-aos-anchor-placement="top-center"
 				>
 					<h2>Qui sommes nous ?</h2>
-					<p className={theme && "presentation-light"}>
+					<p className={isLight ? "presentation-light" : ""}>
 						Nous sommes 3 futurs ingénieurs de l'ESIEA qui avons
 						décidé d'accompagner les entreprises voulant booster
 						leurs ventes. De la création de sites web au
@@ -138,16 +142,21 @@ export default function Home() {
 					<h2 className="service-titre">Nos Services</h2>
 					<div className="nos-services-grid">
 						<div
-							className={
-								(theme && "service-item-light") +
-								" service-item"
-							}
+							className={classNames(
+								"service-item",
+								isLight ? "service-item-light" : ""
+							)}
 							data-aos="flip-right"
 							data-aos-anchor-placement="top-center"
 							data-aos-once="true"
 							data-aos-duration="500"
 						>
-							<img src="test3light.svg" alt="" />
+							<img
+								src={
+									"test3" + (isLight ? "light" : "") + ".svg"
+								}
+								alt=""
+							/>
 							<h3>Creation de site web</h3>
 							<p>
 								Takimata dolore eos sea labore. Volutpat sanctus
@@ -156,17 +165,22 @@ export default function Home() {
 							</p>
 						</div>
 						<div
-							className={
-								(theme && "service-item-light") +
-								" service-item"
-							}
+							className={classNames(
+								"service-item",
+								isLight ? "service-item-light" : ""
+							)}
 							data-aos="flip-right"
 							data-aos-anchor-placement="top-center"
 							data-aos-once="true"
 							data-aos-delay="100"
 							data-aos-duration="500"
 						>
-							<img src="test4light.svg" alt="" />
+							<img
+								src={
+									"test4" + (isLight ? "light" : "") + ".svg"
+								}
+								alt=""
+							/>
 							<h3>SEO</h3>
 							<p>
 								Takimata dolore eos sea labore. Volutpat sanctus
@@ -176,10 +190,10 @@ export default function Home() {
 						</div>
 					</div>
 					<button
-						className={
-							(theme && "ensavoirplus-button-light") +
-							" ensavoirplus-button"
-						}
+						className={classNames(
+							"ensavoirplus-button",
+							isLight ? "ensavoirplus-button-light" : ""
+						)}
 					>
 						En savoir plus
 					</button>
