@@ -14,6 +14,10 @@ export default function offers(props) {
   // console.log(location, " useLocation Hook");
   // const data = location.state?.data;
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Head>
@@ -29,7 +33,12 @@ export default function offers(props) {
       <main className="offers">
         <h2>Pourquoi nous choisir ?</h2>
         <div className="atout">
-          <div className="atout-item">
+          <div
+            className="atout-item"
+            data-aos="fade-right"
+            data-aos-anchor-placement=".atout"
+            data-aos-once="true"
+          >
             <img src="" alt="" />
             <h2>1.</h2>
             <h3>Design</h3>
@@ -38,13 +47,25 @@ export default function offers(props) {
               l'attention de vos visiteurs.
             </p>
           </div>
-          <div className="atout-item">
+          <div
+            className="atout-item"
+            data-aos="fade-right"
+            data-aos-anchor-placement=".atout"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <img src="" alt="" />
             <h2>2.</h2>
             <h3>Responsive</h3>
             <p>Votre site web est adapté à tous les écrans.</p>
           </div>
-          <div className="atout-item">
+          <div
+            className="atout-item"
+            data-aos="fade-right"
+            data-aos-anchor-placement=".atout"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <h2>3.</h2>
             <img src="" alt="" />
             <h3>Accessible</h3>
@@ -56,7 +77,12 @@ export default function offers(props) {
         </div>
         <h2>Nos offres</h2>
         <section className="nos-offres-grid">
-          <div className="nos-offres-item">
+          <div
+            className="nos-offres-item"
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-once="true"
+          >
             <h3 className="nos-offres-item-title">Site Vitrine</h3>
             <p>Une carte de visite pour votre commerce.</p>
             <ul>
@@ -70,7 +96,14 @@ export default function offers(props) {
             <h3 className="prix">A partir de 500€</h3>
             <button>Obtenir un devis</button>
           </div>
-          <div className="nos-offres-item">
+          <div
+            className="nos-offres-item"
+            data-aos="fade-right"
+            data-aos-anchor-placement=".nos-offres-item"
+            data-aos-offset="400"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <h3 className="nos-offres-item-title">Site Vitrine</h3>
             <p>Une carte de visite pour votre commerce.</p>
             <ul>
@@ -84,7 +117,14 @@ export default function offers(props) {
             <h3 className="prix">A partir de 500€</h3>
             <button>Obtenir un devis</button>
           </div>
-          <div className="nos-offres-item">
+          <div
+            className="nos-offres-item"
+            data-aos="fade-right"
+            data-aos-anchor-placement=".nos-offres-item"
+            data-aos-offset="400"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <h3 className="nos-offres-item-title">Site Vitrine</h3>
             <p>Une carte de visite pour votre commerce.</p>
             <ul>
