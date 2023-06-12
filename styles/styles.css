@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
 
 
@@ -59,12 +59,13 @@ body{
 header{
     position: fixed;
     width: 100%;
-    top: 0%;
+    top: -0.1%;
     z-index: 10;
+    margin: 0%;
 }
 
 .header-container{
-    padding: 1.5% 2%;
+    padding:2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +76,13 @@ header{
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-container{
+        padding: 1.5% 2%;
+        height: 32px;
+    }
 }
 
 .light_theme-header{
@@ -128,11 +136,12 @@ nav>h3{
 }
 
 .nav-item-button{
-    padding: 1.2%;
+    padding: 8px;
     border-radius: 2em;
     background-color: white;
     color: rgba(5, 0, 98, 1);
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .nav-item-button:hover{
@@ -143,11 +152,12 @@ nav>h3{
 
 
 .nav-item-button-light{
-    padding: 1.2%;
+    padding: 8px;
     border-radius: 2em;
     background-color: white;
     color: rgba(5, 0, 98, 1);
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .nav-item-button-light:hover{
@@ -186,6 +196,15 @@ nav>h3{
 
 .hidden {
     display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-item-button{
+        padding: 16px;
+    }
+    .nav-item-button-light{
+        padding: 16px;
+    }
 }
 
 /* /////////////////////////    FIN DE NAV     ///////////////////////////////: */
@@ -364,6 +383,7 @@ footer>h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .fleche{
@@ -384,7 +404,7 @@ footer>h3 {
 }
 
 .wave{
-    display: none;
+   display: none;
 }
 
 /* //////////////////////////HERO BANNER MOBILE FIN////////////////////////////////// */
@@ -403,6 +423,7 @@ footer>h3 {
     }
 
     .wave {
+        display: block;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -635,6 +656,7 @@ footer>h3 {
     margin-right: 12%;
     margin-top: 5%;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .ensavoirplus-button-light{
@@ -805,6 +827,89 @@ footer>h3 {
 }
 
 
+.nos-offres-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 8% 8%;
+    margin: 6% 0%;
+    gap: 64px;
+}
+
+.nos-offres-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 8%;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.nos-offres-item-title {
+    font-size: 1.618rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nos-offres-item>p {
+    font-weight: 500;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.nos-offres-item>ul {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.nos-offres-item>ul>li {
+    list-style-type: disc;
+    width: 100%;
+    padding: 3% 0%;
+}
+
+.nos-offres-item-line {
+    border-bottom: solid;
+    width: 100%;
+    border-color: rgba(255, 255, 255, 0.10);
+}
+
+.nos-offres-item-line-light{
+    border-color: rgba(0, 0, 0, 0.10);
+}
+
+.prix {
+    font-size: 1.618rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nos-offres-item>button {
+    padding: 8px 16px;
+    border-radius: 2em;
+    transition: all 0.3s;
+    background-image: linear-gradient(-225deg, #ee2f9b 0%, #b35cf9 52%, #3737f6 100%);
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nos-offres-item>button:hover {
+    transform: scale(1.1);
+}
+
+.nos-offres-item-button-light{
+    background: linear-gradient(135deg, #667eea 50%, #764ba2 100%);
+}
 
 @media screen and (min-width: 1024px) {
 .offers{
@@ -818,7 +923,7 @@ footer>h3 {
 
 .atout{
     margin: 6% 0%;
-    margin-bottom: 16%;
+    margin-bottom: 12%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -846,6 +951,10 @@ footer>h3 {
     padding: 3%;
 }
 
-
-
+.nos-offres-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 8%;
+    gap: 32px;
+}
 }

@@ -55,17 +55,50 @@ export default function offers(props) {
           </div>
         </div>
         <h2>Nos offres</h2>
-        <div className="nos-offres-grid">
+        <section className="nos-offres-grid">
           <div className="nos-offres-item">
-            <h3>Site Vitrine</h3>
-            <p>
-              Une véritable carte de visite de votre entreprise. Mettez en
-              valeur votre savoir-faire.
-            </p>
+            <h3 className="nos-offres-item-title">Site Vitrine</h3>
+            <p>Une carte de visite pour votre commerce.</p>
+            <ul>
+              <li>Design de qualité</li>
+              <li>Référencement optimisé</li>
+              <li>Intégration de liens externes</li>
+              <li>Performance rapide</li>
+              <li>Conforme aux normes d'accessibilté</li>
+            </ul>
             <div className="nos-offres-item-line"></div>
+            <h3 className="prix">A partir de 500€</h3>
             <button>Obtenir un devis</button>
           </div>
-        </div>
+          <div className="nos-offres-item">
+            <h3 className="nos-offres-item-title">Site Vitrine</h3>
+            <p>Une carte de visite pour votre commerce.</p>
+            <ul>
+              <li>Design de qualité</li>
+              <li>Référencement optimisé</li>
+              <li>Intégration de liens externes</li>
+              <li>Performance rapide</li>
+              <li>Conforme aux normes d'accessibilté</li>
+            </ul>
+            <div className="nos-offres-item-line"></div>
+            <h3 className="prix">A partir de 500€</h3>
+            <button>Obtenir un devis</button>
+          </div>
+          <div className="nos-offres-item">
+            <h3 className="nos-offres-item-title">Site Vitrine</h3>
+            <p>Une carte de visite pour votre commerce.</p>
+            <ul>
+              <li>Design de qualité</li>
+              <li>Référencement optimisé</li>
+              <li>Intégration de liens externes</li>
+              <li>Performance rapide</li>
+              <li>Conforme aux normes d'accessibilté</li>
+            </ul>
+            <div className="nos-offres-item-line"></div>
+            <h3 className="prix">A partir de 500€</h3>
+            <button>Obtenir un devis</button>
+          </div>
+        </section>
       </main>
     </>
   );
