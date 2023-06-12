@@ -39,7 +39,7 @@ export default function Home() {
               className="slogan"
               data-aos="fade-right"
               data-aos-once="true"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               {/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
               <span
@@ -83,7 +83,7 @@ export default function Home() {
               data-aos="fade-right"
               data-aos-once="true"
               data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               Laissez votre empreinte sur le Web avec{" "}
               <span
@@ -187,7 +187,7 @@ export default function Home() {
           <div
             className="nos-realisations-item"
             data-aos="fade-right"
-            data-aos-duration="800"
+            data-aos-duration="700"
             data-aos-anchor-placement="top-center"
             data-aos-once="true"
           >

@@ -270,7 +270,7 @@ footer>h3 {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    padding: 6% 0%;
+    padding: 4px 0%;
     background-color: rgb(9, 16, 41);
     font-weight: 300;
     color: rgba(255, 255, 255, 0.87);
@@ -301,7 +301,7 @@ footer>h3 {
     }
 
     .footer-end{
-        padding: 1% 0%;
+        padding: 8px;
     }
 }
 
