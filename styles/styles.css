@@ -7,13 +7,13 @@ html {
     width: 100%;
     margin : 0%;
     padding: 0%;
-    background:rgba(32, 38, 57, 1) ;
-    color: white;
-    
+    background: rgb(9, 16, 41);
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .light_theme-html{
-    background: white;
+    background-color: #ace0f9;
     color: #091540;
 }
 
@@ -47,11 +47,13 @@ body{
     padding: 0%;
     /* transform: translatez(0);
     -webkit-transform: translatez(0); */
-    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 20%, rgba(63, 76, 119, 1) 80%);
+    /* background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 20%, rgba(63, 76, 119, 1) 80%); */
+    background-color: rgb(9, 16, 41);
 }
 
 .light_theme-body{
-    background-image: linear-gradient(to top, #e7f0fd -50%,#accbee  100%);
+    background-color: #accbee;
+    background-color: #ace0f9;
 }
 
 header{
@@ -135,7 +137,7 @@ nav>h3{
 
 .nav-item-button:hover{
     transform: scale(1.1);
-    background-color: rgba(231, 112, 112, 1);
+    background-image: linear-gradient(-225deg, #ee2f9b 0%, #b35cf9 52%, #3737f6 100%);
     color: white;
 }
 
@@ -201,7 +203,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .light-theme-footer{
@@ -250,8 +252,9 @@ footer>h3 {
     align-items: center;
     margin-top: 2rem;
     padding: 6% 0%;
-    background-color: rgba(32, 38, 57, 1);
+    background-color: rgb(9, 16, 41);
     font-weight: 300;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .footer-end>p {
@@ -298,6 +301,11 @@ footer>h3 {
     padding: 15%;
     min-height: 100vh;
     box-sizing: border-box;
+    background-image: linear-gradient(-225deg, #3a0b26 0%, #220937 52%, #14145a 100%);
+}
+
+.hero-banner-light{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 
@@ -310,7 +318,7 @@ footer>h3 {
     word-spacing: 10000vw;
     font-size: 14vw;
     font-weight: 800;
-    
+
 }
 
 .slogan-gradient{
@@ -343,6 +351,7 @@ footer>h3 {
     width: 30vh;
     margin-top: 5%;
     transition: all 1s;
+    z-index: 1;
 }
 
 .hero-banner-button{
@@ -362,6 +371,7 @@ footer>h3 {
     scale: 0.7;
     transition: transform .4s;
     cursor: pointer;
+    z-index: 1;
 
 }
 
@@ -373,7 +383,13 @@ footer>h3 {
     transform: scale(1.1);
 }
 
-
+.wave{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
 
 /* //////////////////////////HERO BANNER MOBILE FIN////////////////////////////////// */
 
@@ -395,7 +411,7 @@ footer>h3 {
         border-radius: 50px;
         margin-top: 10%;
         align-items: start;
-        z-index: 1;
+        z-index: 2;
     }
 
     .fleche{
@@ -411,7 +427,7 @@ footer>h3 {
     }
 
     .hero-banner-texte{
-        z-index: 1;
+        z-index: 2;
         margin-top: 5%;
     }
 
@@ -606,8 +622,8 @@ footer>h3 {
     padding: 3% 5%;
     font-size: 1rem;
     border: none;
-    background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
-    color: rgba(32, 38, 57, 1);
+    background-image: linear-gradient(-225deg, #ee2f9b 0%, #b35cf9 52%, #3737f6 100%);
+    color: rgba(255, 255, 255, 0.87);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     width: fit-content;
@@ -694,7 +710,7 @@ footer>h3 {
     align-items: center;
     font-size: 2rem;
     font-family: 'Montserrat',sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .overlay-texte{
@@ -726,7 +742,7 @@ footer>h3 {
 
     .item-overlay{
         transition: all 0.5s ease;
-        color: white;
+        color: rgba(255, 255, 255, 0.87);
     }
 
     .nos-realisations-item:hover .item-overlay{
@@ -741,4 +757,60 @@ footer>h3 {
         filter: brightness(0.8);
         transform: scale(1.05);
     }
+}
+
+
+/* ////////////////////////////////// NOS OFFRES PAGE /////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+.offers{
+    margin-top: 10%;
+}
+
+.offers>h2{
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.atout{
+    margin: 5% 0%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0% 8%;
+}
+
+.atout-item{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.atout-item>h2{
+    font-size: 4.2rem;
+    margin-bottom: 2%;
+}
+
+.atout-item>h3{
+    font-size: 1.618rem;
+}
+
+.atout-item>p{
+    padding: 3%;
+}
+
+.nos-offres{
+    margin-top: 10%;
+}
+
+
 }
