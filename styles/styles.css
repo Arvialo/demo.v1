@@ -384,11 +384,7 @@ footer>h3 {
 }
 
 .wave{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+    display: none;
 }
 
 /* //////////////////////////HERO BANNER MOBILE FIN////////////////////////////////// */
@@ -404,6 +400,14 @@ footer>h3 {
         padding: 6%;
         justify-content: center;
         align-items: center;
+    }
+
+    .wave {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
     }
 
     .hero-banner-button{
@@ -763,9 +767,42 @@ footer>h3 {
 /* ////////////////////////////////// NOS OFFRES PAGE /////////////////////////////////////////////////////////////// */
 
 
+.offers{
+    margin-top: 32%;
+}
 
+.offers>h2{
+    font-size: 1.618rem;
+    text-align: center;
+}
 
+.atout{
+    margin: 16% 0%;
+    margin-bottom: 32%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0% 8%;
+}
 
+.atout-item {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.atout-item>h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2%;
+}
+
+.atout-item>h3 {
+    font-size: 1.618rem;
+}
+
+.atout-item>p {
+    padding: 3% 0%;
+}
 
 
 
@@ -780,10 +817,11 @@ footer>h3 {
 }
 
 .atout{
-    margin: 5% 0%;
-    margin-bottom: 10%;
+    margin: 6% 0%;
+    margin-bottom: 16%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding: 0% 8%;
 }
 
@@ -808,9 +846,6 @@ footer>h3 {
     padding: 3%;
 }
 
-.nos-offres{
-    margin-top: 10%;
-}
 
 
 }
