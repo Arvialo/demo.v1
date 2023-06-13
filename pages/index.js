@@ -97,7 +97,7 @@ export default function Home() {
             </h3>
           </div>
           <img
-            src="terre.png"
+            src="hero.png"
             alt="dessin appareil web"
             className={classNames(
               "hero-banner-image",

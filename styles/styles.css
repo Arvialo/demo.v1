@@ -320,7 +320,7 @@ footer>h3 {
     padding: 15%;
     min-height: 100vh;
     box-sizing: border-box;
-    background-image: linear-gradient(-225deg, #3a0b26 0%, #220937 52%, #14145a 100%);
+    background-image: linear-gradient(-225deg, #5d123c 0%, #2a123d 52%, #3535a2 100%);
 }
 
 .hero-banner-light{
@@ -342,6 +342,7 @@ footer>h3 {
 
 .slogan-gradient{
     background: -webkit-linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+    background: -webkit-linear-gradient(-225deg, #ee2f9b 0%, #d8abfc 52%, #8888fb 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
