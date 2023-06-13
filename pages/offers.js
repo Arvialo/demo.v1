@@ -140,6 +140,7 @@ export default function offers(props) {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

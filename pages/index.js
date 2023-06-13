@@ -112,6 +112,7 @@ export default function Home() {
           />
           <img src="wave.svg" alt="" className="wave" />
         </section>
+        <div className="line"></div>
         <span ref={ref}></span>
         <section
           className="presentation"
