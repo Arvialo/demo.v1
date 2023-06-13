@@ -37,7 +37,11 @@ function Header() {
 					isLight ? "light_theme-header" : ""
 				)}
 			>
-				<img src="logo.svg" alt="" className="logo" />
+				<img
+					src={isLight ? "logoDark.svg" : "logo.svg"}
+					alt=""
+					className="logo"
+				/>
 				<img
 					src={isOpen ? "cross.svg" : "hamburger.svg"}
 					alt=""
