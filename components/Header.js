@@ -70,14 +70,16 @@ function Header() {
 					>
 						Nos créations
 					</Link>
-					<div
+					<Link
+						style={{ textDecoration: "none" }}
 						className={classNames(
 							isLight ? "nav-item-button-light" : "",
 							"nav-item-button"
 						)}
+						href="contact"
 					>
 						Contactez-nous
-					</div>
+					</Link>
 					<button
 						style={{
 							border: "none",
