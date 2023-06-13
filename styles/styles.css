@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
 
-body,
-html {
-    scroll-snap-type: mandatory;
-    scroll-snap-type: y mandatory;
-}
 
-.wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 95vh;
-    scroll-snap-align: center;
-}
+
 
 html {
     min-height:100vh;
@@ -354,7 +343,6 @@ footer>h3 {
 }
 
 .slogan-gradient{
-    background: -webkit-linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
     background: -webkit-linear-gradient(-225deg, #ee2f9b 0%, #d8abfc 52%, #8888fb 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -364,6 +352,7 @@ footer>h3 {
 
 .slogan-gradient-light{
     background: -webkit-linear-gradient(135deg, #667eea 50%, #764ba2 100%);
+    background: -webkit-linear-gradient(-225deg, #ee2f9b 0%, #d8abfc 52%, #8888fb 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -541,7 +530,7 @@ footer>h3 {
 
 
 .presentation{
-    /* margin-top: 30%;   */
+    margin-top: 30%;  
     padding: 0% 12%;
     position: relative;
 }
@@ -572,12 +561,12 @@ footer>h3 {
     line-height: 140%;
 }
 
-.presentation>img{
+/* .presentation>img{
     display: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
-    .presentation>img {
+    /* .presentation>img {
         display: block;
         height: 50vw;
         width: 50vw;
@@ -585,7 +574,7 @@ footer>h3 {
         filter: brightness(70%);
         position: absolute;
         transition: all 0.5s;
-    }
+    } */
 
     .presentation>p {
             position: relative;
@@ -595,7 +584,7 @@ footer>h3 {
 
 @media screen and (min-width: 1024px) {
     .presentation{
-        /* margin-top: 15%; */
+        margin-top: 15%;
     }
 
     .presentation>p{
@@ -607,7 +596,7 @@ footer>h3 {
 
 
 
-    .presentation>img{
+    /* .presentation>img{
         display: block;
         height: 35vw;
         width: 35vw;
@@ -615,7 +604,7 @@ footer>h3 {
         filter: brightness(70%);
         position: absolute;
         transition: all 0.5s;
-    }
+    } */
 
     .presentation-light{
         border-radius: 25px;
@@ -633,7 +622,7 @@ footer>h3 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    /* margin-top: 45%; */
+    margin-top: 45%;
 }
 
 .nos-services-banner{
@@ -653,7 +642,7 @@ footer>h3 {
 .service-item{
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    padding: 4%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -713,7 +702,7 @@ footer>h3 {
 
 @media screen and (min-width: 1024px) {
     .service-titre{
-        /* margin-top: 30%; */
+        margin-top: 24%;
     }
 
     .nos-services-grid{
@@ -742,7 +731,7 @@ footer>h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
-    /* margin-top: 45%; */
+    margin-top: 45%;
     font-size: 2.5rem;
 }
 
@@ -802,7 +791,7 @@ footer>h3 {
 
 @media screen and (min-width: 1024px) {
     .nos-realisations-titre{
-        /* margin-top: 20%; */
+        margin-top: 24%;
     }
 
     .nos-realisations-item{
