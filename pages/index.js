@@ -110,7 +110,7 @@ export default function Home() {
             )}
           />
           <img
-            src={"fleche" + (isLight ? "light" : "") + ".svg"}
+            src="fleche.svg"
             alt=""
             className="fleche"
             onClick={handleClick}
@@ -121,10 +121,8 @@ export default function Home() {
             className="wave"
           />
         </section>
-
-        <div className="line"></div>
+        <div className="line-light"></div>
         <span ref={ref}></span>
-
         <section
           className="presentation"
           data-aos="fade-right"
@@ -133,7 +131,7 @@ export default function Home() {
           data-aos-anchor-placement="top-center"
         >
           <h2>Qui sommes nous ?</h2>
-          <p className={isLight ? "presentation-light" : ""}>
+          <p>
             Nous sommes 3 futurs ingénieurs de l'ESIEA qui avons décidé
             d'accompagner les entreprises voulant booster leurs ventes. De la
             création de sites web au référencement en ligne, nous proposons de
@@ -141,21 +139,20 @@ export default function Home() {
             imagination.
           </p>
         </section>
-
-        <section className="nos-services-banner">
+        <img src="border.svg" alt="" className="border" />
+        {/* Ajouter la classe border-dark quand dark theme */}
+        <section className="nos-services-banner nos-services-banner-light">
+          {/* Faire le changement de theme */}
           <h2 className="service-titre">Nos Services</h2>
           <div className="nos-services-grid">
             <div
-              className={classNames(
-                "service-item",
-                isLight ? "service-item-light" : ""
-              )}
+              className="service-item"
               data-aos="flip-right"
               data-aos-anchor-placement="top-center"
               data-aos-once="true"
               data-aos-duration="500"
             >
-              <img src={"test3" + (isLight ? "light" : "") + ".svg"} alt="" />
+              <img src="test3.svg" alt="" />
               <h3>Creation de site web</h3>
               <p>
                 Takimata dolore eos sea labore. Volutpat sanctus vero et sea et
@@ -164,17 +161,14 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={classNames(
-                "service-item",
-                isLight ? "service-item-light" : ""
-              )}
+              className="service-item"
               data-aos="flip-right"
               data-aos-anchor-placement="top-center"
               data-aos-once="true"
               data-aos-delay="100"
               data-aos-duration="500"
             >
-              <img src={"test4" + (isLight ? "light" : "") + ".svg"} alt="" />
+              <img src="test4.svg" alt="" />
               <h3>SEO</h3>
               <p>
                 Takimata dolore eos sea labore. Volutpat sanctus vero et sea et
@@ -183,17 +177,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <button
-            className={classNames(
-              "ensavoirplus-button",
-              isLight ? "ensavoirplus-button-light" : ""
-            )}
-          >
-            En savoir plus
-          </button>
+          <button className="ensavoirplus-button">En savoir plus</button>
         </section>
-
-        <section className="nos-realisations-banner">
+        <img src="borderbottom.svg" alt="" className="border bottom" />
+        {/* Ajouter la classe border-dark quand dark theme */}
+        <section className="nos-realisations-banner nos-realisations-banner-light">
+          {/* Faire le changement de theme */}
           <h2 className="nos-realisations-titre">Nos Réalisations</h2>
           <div
             className="nos-realisations-item"

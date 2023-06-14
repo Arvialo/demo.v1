@@ -2,8 +2,8 @@
 <path d="M65.7808 1239.09V118.117C65.7808 89.3217 89.1239 65.9785 117.919 65.9785H1751.59C1780.38 65.9785 1803.72 89.3217 1803.72 118.117V1239.09M65.7808 1239.09V1404.19C65.7808 1432.99 89.1239 1456.33 117.919 1456.33H1751.59C1780.38 1456.33 1803.72 1432.99 1803.72 1404.19V1239.09M65.7808 1239.09H1803.72M674.061 1803.92H804.407M804.407 1803.92V1456.33M804.407 1803.92H1065.1M1065.1 1803.92H1195.44M1065.1 1803.92V1456.33" stroke="url(#paint0_linear_295_4)" stroke-width="130.346" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_295_4" x1="934.752" y1="65.9785" x2="934.752" y2="1803.92" gradientUnits="userSpaceOnUse">
-<stop stop-color="#B7F8DB"/>
-<stop offset="1" stop-color="#50A7C2"/>
+<stop stop-color="#b35cf9"/>
+<stop offset="1" stop-color="#b35cf9"/>
 </linearGradient>
 </defs>
 </svg>
