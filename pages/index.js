@@ -6,6 +6,14 @@ import "aos/dist/aos.css";
 import { useEffect, useRef } from "react";
 import useColorTheme from "@/hooks/useColorTheme";
 import classNames from "@/hooks/classNames";
+import Image from "next/image";
+import HeroImage from "@/public/hero.png";
+import Fleche from "@/public/fleche.svg";
+import BorderImage from "@/public/border.svg";
+import Test3 from "@/public/test3.svg";
+import Test4 from "@/public/test4.svg";
+import BorderBottomImage from "@/public/borderbottom.svg";
+import MyDonutImage from "@/public/MyDonut.png";
 
 export default function Home() {
   const { isLight } = useColorTheme();
@@ -40,12 +48,7 @@ export default function Home() {
           )}
         >
           <div className="hero-banner-texte">
-            <h1
-              className="slogan"
-              data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-duration="800"
-            >
+            <h1 className="slogan">
               {/* Ambition <span className="slogan-gradient">And</span> Adaptation. */}
               <span
                 className={classNames(
@@ -101,24 +104,21 @@ export default function Home() {
               </span>
             </h3>
           </div>
-          <img
-            src="hero.png"
+          <Image
+            src={HeroImage}
             alt="dessin appareil web"
             className={classNames(
               "hero-banner-image",
               isLight ? "hero-banner-image-light" : ""
             )}
+            priority="true"
           />
-          <img
-            src="fleche.svg"
-            alt=""
-            className="fleche"
-            onClick={handleClick}
-          />
+          <Image src={Fleche} alt="" className="fleche" onClick={handleClick} />
           <img
             src={"wave" + (isLight ? "-light1" : "") + ".svg"}
             alt=""
             className="wave"
+            priority="true"
           />
         </section>
         <div className="line-light"></div>
@@ -139,7 +139,7 @@ export default function Home() {
             imagination.
           </p>
         </section>
-        <img src="border.svg" alt="" className="border" />
+        <Image src={BorderImage} alt="" className="border" />
         {/* Ajouter la classe border-dark quand dark theme */}
         <section className="nos-services-banner nos-services-banner-light">
           {/* Faire le changement de theme */}
@@ -152,7 +152,7 @@ export default function Home() {
               data-aos-once="true"
               data-aos-duration="500"
             >
-              <img src="test3.svg" alt="" />
+              <Image src={Test3} alt="" />
               <h3>Creation de site web</h3>
               <p>
                 Takimata dolore eos sea labore. Volutpat sanctus vero et sea et
@@ -168,7 +168,7 @@ export default function Home() {
               data-aos-delay="100"
               data-aos-duration="500"
             >
-              <img src="test4.svg" alt="" />
+              <Image src={Test4} alt="" />
               <h3>SEO</h3>
               <p>
                 Takimata dolore eos sea labore. Volutpat sanctus vero et sea et
@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <button className="ensavoirplus-button">En savoir plus</button>
         </section>
-        <img src="borderbottom.svg" alt="" className="border bottom" />
+        <Image src={BorderBottomImage} alt="" className="border bottom" />
         {/* Ajouter la classe border-dark quand dark theme */}
         <section className="nos-realisations-banner nos-realisations-banner-light">
           {/* Faire le changement de theme */}
@@ -191,7 +191,7 @@ export default function Home() {
             data-aos-anchor-placement="top-center"
             data-aos-once="true"
           >
-            <img src="MyDonut.png" alt="" />
+            <Image src={MyDonutImage} alt="" />
             <div className="item-overlay">
               <div className="overlay-texte">
                 <h3>M.D</h3>

@@ -19,6 +19,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.12.0",
+    "sharp": "^0.32.1",
     "xhr2": "^0.2.1"
   }
 }
