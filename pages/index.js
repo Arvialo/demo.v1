@@ -121,7 +121,6 @@ export default function Home() {
             priority="true"
           />
         </section>
-        <div className="line-light"></div>
         <span ref={ref}></span>
         <section
           className="presentation"
@@ -139,8 +138,6 @@ export default function Home() {
             imagination.
           </p>
         </section>
-        <Image src={BorderImage} alt="" className="border" />
-        {/* Ajouter la classe border-dark quand dark theme */}
         <section className="nos-services-banner nos-services-banner-light">
           {/* Faire le changement de theme */}
           <h2 className="service-titre">Nos Services</h2>
@@ -179,8 +176,6 @@ export default function Home() {
           </div>
           <button className="ensavoirplus-button">En savoir plus</button>
         </section>
-        <Image src={BorderBottomImage} alt="" className="border bottom" />
-        {/* Ajouter la classe border-dark quand dark theme */}
         <section className="nos-realisations-banner nos-realisations-banner-light">
           {/* Faire le changement de theme */}
           <h2 className="nos-realisations-titre">Nos Réalisations</h2>
