@@ -202,7 +202,7 @@ nav>h3{
 
 footer {
     margin-top: 45%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.01);
     padding-top: 32px;
     padding-bottom: 0%;
     display: flex;
@@ -656,6 +656,7 @@ footer>h3 {
 
     .nos-services-texte>p {
         margin-top: 32px;
+        max-width: 800px;
     }
 
     .ensavoirplus-button {
@@ -682,12 +683,11 @@ footer>h3 {
     border-radius: 10px;
 }
 
-
+/* ////////////////////////////////////////// FAQ //////////////////////////////////////////////////////////// */
 
 .faq{
     margin-top: 160px;
-    margin-top: 280px;
-    padding: 64px;
+    padding: 0px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -701,34 +701,75 @@ footer>h3 {
 .faq-item{
     width: 100%;
     padding: 0px 16px;
+    transition: all 1s ease-in;
 }
 
 .faq-question{
-    padding: 32px;
-    font-size: 1.618rem;
-    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
+}
+
+.faq-question>h3{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: #050d28;
 }
 
-.faq-reponse{
-    width: 100%;
-    padding: 32px;
+.faq-question>img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.active-arrow{
+    transform: rotate(-180deg);
+}
+
+.faq-reponse {
     line-height: 32px;
-    background-color:#091540;
+    color: rgb(150, 150, 150);
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
     box-sizing: border-box;
-    height: 0px;
     overflow: hidden;
-    padding: 0px;
-    transition: 0.5s ease;
+    height: 0px;
+    padding: 0px 16px;
+    transition: all 0.5s ease;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.faq-reponse-active{
-    padding: 32px;
+.faq-reponse-active {
     height: auto;
+    padding: 32px 16px;
+    transition: all 0.5s ease;
 }
 
+@media screen and (min-width: 1024px) {
+    .faq{
+        margin-top: 200px;
+        padding: 0px 64px;
+    }
 
+    .faq-question{
+        font-size: 1.33rem;
+        padding: 8px 32px;
+    }
+
+    .faq-reponse{
+        padding: 0px 32px;
+    }
+
+    .faq-reponse-active{
+        padding: 32px;
+    }
+}
 
 /* ////////////////////////////////// NOS OFFRES PAGE /////////////////////////////////////////////////////////////// */
 
@@ -860,7 +901,7 @@ footer>h3 {
 
 @media screen and (min-width: 1024px) {
 .offers{
-    margin-top: 10%;
+    margin-top: 160px;
 }
 
 .offers>h2{
@@ -869,12 +910,12 @@ footer>h3 {
 }
 
 .atout{
-    margin: 6% 0%;
-    margin-bottom: 12%;
+    margin: 128px 0%;
+    margin-bottom: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0% 8%;
+    padding: 0% 48px;
 }
 
 .atout-item{
@@ -887,7 +928,7 @@ footer>h3 {
 
 .atout-item>h2{
     font-size: 4.2rem;
-    margin-bottom: 2%;
+    margin-bottom: 8px;
 }
 
 .atout-item>h3{
@@ -895,15 +936,20 @@ footer>h3 {
 }
 
 .atout-item>p{
-    padding: 3%;
+    padding: 16px;
 }
 
 .nos-offres-grid{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 8%;
+    padding: 0 80px;
     gap: 32px;
     margin-bottom: 256px;
+}
+
+.nos-offres-item{
+    max-width: 420px;
+    justify-self: center;
 }
 }
 
@@ -972,7 +1018,7 @@ form input {
     border: none;
     padding: 4px;
     border-radius: 5px;
-    background-color: #050d28;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 form textarea {
@@ -984,7 +1030,7 @@ form textarea {
     padding: 4px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    background-color: #050d28;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 

@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Faq from "@/components/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import useColorTheme from "@/hooks/useColorTheme";
 import classNames from "@/hooks/classNames";
 import Image from "next/image";
@@ -13,6 +14,7 @@ import Fleche from "@/public/fleche.svg";
 import Icon1 from "@/public/icon1.png";
 import Icon2 from "@/public/icon2.png";
 import Icon3 from "@/public/icon3.png";
+import Icon4 from "@/public/icon4.png";
 import RealImage1 from "@/public/real-image1.png";
 import RealImage2 from "@/public/real-image2.jpg";
 import RealImage3 from "@/public/real-image3.jpg";
@@ -20,8 +22,6 @@ import RealImage4 from "@/public/real-image4.jpg";
 
 export default function Home() {
   const { isLight } = useColorTheme();
-
-  const [faqActive, setFaqActive] = useState(0);
 
   const ref = useRef(null);
 
@@ -110,17 +110,22 @@ export default function Home() {
           </div>
           <Image
             src={HeroImage}
-            alt="dessin appareil web"
+            alt="ordinateur style 3d"
             className={classNames(
               "hero-banner-image",
               isLight ? "hero-banner-image-light" : ""
             )}
             priority="true"
           />
-          <Image src={Fleche} alt="" className="fleche" onClick={handleClick} />
+          <Image
+            src={Fleche}
+            alt="fleche"
+            className="fleche"
+            onClick={handleClick}
+          />
           <img
             src={"wave" + (isLight ? "-light1" : "") + ".svg"}
-            alt=""
+            alt="vague"
             className="wave"
             priority="true"
           />
@@ -129,23 +134,23 @@ export default function Home() {
         <section className="nos-services-banner nos-services-banner-light">
           <div className="nos-services-image">
             <div className="nos-services-image-item">
-              <Image src={Icon1} height={150} width={150}></Image>
+              <Image src={Icon1} alt="pouce style 3d"></Image>
               <h3>Design</h3>
               <p>Un design de qualité tout comme votre business</p>
             </div>
             <div className="nos-services-image-item">
-              <Image src={Icon2}></Image>
-              <h3>Design</h3>
+              <Image src={Icon2} alt="fusée style 3d"></Image>
+              <h3>Performant</h3>
               <p>Un design de qualité tout comme votre business</p>
             </div>
             <div className="nos-services-image-item">
-              <Image src={Icon3}></Image>
-              <h3>Design</h3>
+              <Image src={Icon3} alt="personnes style 3d"></Image>
+              <h3>Sécurisé</h3>
               <p>Un design de qualité tout comme votre business</p>
             </div>
             <div className="nos-services-image-item">
-              <Image src={Icon2}></Image>
-              <h3>Design</h3>
+              <Image src={Icon4} alt="Téléphone style 3D"></Image>
+              <h3>Responsive</h3>
               <p>Un design de qualité tout comme votre business</p>
             </div>
           </div>
@@ -161,45 +166,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <Faq />
         <section className="nos-realisations-banner nos-realisations-banner-light"></section>
-        <section className="faq">
-          <div className="faq-item">
-            <div className="faq-question">Comment tu t'appelles ?</div>
-            <div
-              className={
-                "faq-reponse " + (faqActive === 1 ? "faq-reponse-active" : "")
-              }
-            >
-              Nous proposons de prendre en charge complètement votre site web,
-              des premières étapes de conception jusqu'au déploiement de
-              celui-ci et même après. Nous proposons de prendre en charge
-              complètement votre site web, des premières étapes de conception
-              jusqu'au déploiement de celui-ci et même après. Nous proposons de
-              prendre en charge complètement votre site web, des premières
-              étapes de conception jusqu'au déploiement de celui-ci et même
-              après.
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-question" onClick={() => setFaqActive(1)}>
-              Comment tu t'appelles ?
-            </div>
-            <div
-              className={
-                "faq-reponse " + faqActive === 1 ? "faq-reponse-active" : null
-              }
-            >
-              Nous proposons de prendre en charge complètement votre site web,
-              des premières étapes de conception jusqu'au déploiement de
-              celui-ci et même après. Nous proposons de prendre en charge
-              complètement votre site web, des premières étapes de conception
-              jusqu'au déploiement de celui-ci et même après. Nous proposons de
-              prendre en charge complètement votre site web, des premières
-              étapes de conception jusqu'au déploiement de celui-ci et même
-              après.
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </>
