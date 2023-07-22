@@ -9,7 +9,7 @@ html {
     width: 100%;
     margin : 0%;
     padding: 0%;
-    background: rgb(9, 16, 41);
+    background: rgb(0, 5, 21);
     color: rgba(255, 255, 255, 0.87);
     font-family: 'Montserrat', sans-serif;
 }
@@ -47,15 +47,10 @@ body{
     width: 100%;
     margin: 0%;
     padding: 0%;
-    /* transform: translatez(0);
-    -webkit-transform: translatez(0); */
-    /* background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 20%, rgba(63, 76, 119, 1) 80%); */
-    background-color: rgb(9, 16, 41);
+    background-color: rgb(0, 5, 21);
 }
 
 .light_theme-body{
-    background-color: #accbee;
-    background-color: #ace0f9;
     background-color: white; 
 }
 
@@ -75,7 +70,7 @@ header{
     height: 4vh;
     background-color: rgba(32, 38, 57, 1);
     background: rgba(0, 0, 0, 0.25);
-    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.1);
+    box-shadow: 0 8px 16px 0 rgba(14, 18, 63, 0.1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
@@ -311,13 +306,10 @@ footer>h3 {
     padding: 15%;
     min-height: 100vh;
     box-sizing: border-box;
-    background-image: linear-gradient(-225deg, #5d123c 0%, #2a123d 52%, #3535a2 100%);
+    background-image: linear-gradient(-225deg, #5d123c 0%, #2a123d 52%, #3535a200 100%);
 }
 
 .hero-banner-light{
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    /* background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
@@ -521,133 +513,83 @@ footer>h3 {
 /* //////////////////////////////////////////// HERO BANNER TABLETTE PC //////////////////////////////////////////// */
 
 
-
-.presentation{
-    margin-top: 30%;  
-    padding: 0% 12%;
-    position: relative;
-}
-
-.presentation>h2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.presentation>p{
-    box-sizing: border-box;
-    margin-top: 10%;
-    font-size: 1rem;
-    white-space:pre-wrap;
-        /* Webkit */
-        white-space: -moz-pre-wrap;
-        /* Firefox */
-        white-space: -pre-wrap;
-        /* Opera <7 */
-        white-space: -o-pre-wrap;
-        /* Opera 7 */
-        word-wrap: break-word;
-
-    font-family:'Montserrat',sans-serif; 
-    padding: 2% 0%;
-    line-height: 140%;
-}
-
-/* .presentation>img{
-    display: none;
-} */
-
-@media screen and (min-width: 768px) {
-
-    .presentation>p {
-            position: relative;
-            z-index: 2;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .presentation{
-        margin-top: 200px;
-    }
-
-    .presentation>p{
-        position: relative;
-        margin-top: 3%;
-        font-size: 1.4rem;
-        z-index: 2;
-    }
-
-    
-}
-
 /* //////////////////////////////// GRID services  ////////////////////////////////////////////// */
 
-
-.service-titre{
+.service-titre {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 }
 
-.nos-services-banner{
+.nos-services-banner {
+    margin-top: 128px;
     display: flex;
-    flex-direction: column;
-    margin-top: 45%;
+    flex-direction: column-reverse;
+    gap: 96px;
 }
 
-.nos-services-banner-light{
-    padding: 32px 0%;
-    color: white;
-    position: relative;
-}
+.nos-services-banner-light {}
 
-
-.nos-services-grid{
+.nos-services-image {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 10% 6%;
-    row-gap: 5%;
-    /* color: white; */
+    grid-template-rows: auto auto auto auto;
+    gap: 32px;
+    padding: 0 32px;
 }
 
-
-.service-item{
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 8%;
+.nos-services-image-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.service-item>img{
-    height: 40%;
-    width: 40%;
-}
-
-.service-item>h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-top: 10%;
     text-align: center;
-    text-transform: uppercase;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
+    justify-self: center;
 }
 
-.service-item>p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    margin-top: 3%;
-    font-weight: 200;
+.nos-services-image-item>img {
+    height: 10vw;
+    width: 10vw;
+    max-height: 200px;
+    max-width: 200px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.nos-services-image-item>h3 {
+    font-size: 1.4rem;
+}
+
+.nos-services-image-item>p {
+    text-align: left;
+    color: rgb(160, 160, 160);
+    font-weight: 500;
+}
+
+.nos-services-texte{
+    padding: 0px 16px;
+}
+
+.nos-services-texte>h2 {
+    font-size: 2.6rem;
+    line-height: 50px;
+}
+
+.nos-services-texte>p {
+    margin-top: 16px;
+    line-height: 24px;
+    color: rgb(120, 120, 120);
+    font-weight: 600;
 }
 
 .ensavoirplus-button {
-    border-radius: 20px;
-    padding: 3% 5%;
+    border-radius: 5px;
+    padding: 16px 40px;
     font-size: 1rem;
     border: none;
     background-image: linear-gradient(-225deg, #ee2f9b 0%, #b35cf9 52%, #3737f6 100%);
@@ -655,9 +597,7 @@ footer>h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     width: fit-content;
-    align-self: end;
-    margin-right: 12%;
-    margin-top: 5%;
+    margin-top: 40px;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -668,34 +608,61 @@ footer>h3 {
 }
 
 .ensavoirplus-button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
+
+@media screen and (min-width: 768px) {
+    .nos-services-image{
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        width: 80%;
+        align-self: center;
+    }
+
+    .nos-services-image-item {
+        width: inherit;
+    }
+
+    .nos-services-texte{
+        padding: 0px 32px;
+    }
+}
+
 
 @media screen and (min-width: 1024px) {
     .nos-services-banner{
+        display: grid;
+        grid-template-columns: 50% 50%;
         margin-top: 200px;
+        padding: 0px 64px;
+        column-gap: 64px;
     }
 
-    .nos-services-banner-light{
-        margin-top: 200px;
-        padding: 64px 0%;
+    .nos-services-image {
+        gap: 16px;
+        padding: 0;
+        width: initial;
     }
 
-
-    .nos-services-grid{
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 5%;
-        padding: 5% 6%;
-        padding-bottom: 6%;
+    .nos-services-image-item{
+        max-width: inherit;
+        justify-self: inherit;
     }
 
-    .ensavoirplus-button{
-        margin: 0%;
-        align-self: center;
-        padding: 1% 4%;
+    .nos-services-texte{
+        padding: 0px 16px;
+    }
+
+    .nos-services-texte>p {
+        margin-top: 32px;
+    }
+
+    .ensavoirplus-button {
+        margin-top: 32px;
     }
 }
+
 
 /* /////////////////////////////////// FIN SERVICES ///////////////////////////////////////// */
 
@@ -704,99 +671,63 @@ footer>h3 {
 /* //////////////////////////////////////// NOS REALISATIONS /////////////////////////////////////// */
 
 
-.nos-realisations-titre{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
 .nos-realisations-banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 45%;
+    
 }
 
-.nos-realisations-item{
-    padding: 10% 6%;
-    height: 80vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.nos-realisations-item>img{
+.nos-realisations-banner>img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    object-position: top;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    filter: brightness(50%);
+    border-radius: 10px;
 }
 
-.item-overlay{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-family: 'Montserrat',sans-serif;
-    color: rgba(255, 255, 255, 0.87);
-}
 
-.overlay-texte{
+
+.faq{
+    margin-top: 160px;
+    margin-top: 280px;
+    padding: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.overlay-texte>h3{
-    font-weight: 400;
-    font-family: 'Cormorant', sans-serif;
+.faq>.faq-item:not(:first-child){
+    margin-top: 32px;
 }
 
-.overlay-texte>p{
-    font-size: 1.5rem;
-    line-height: 200%;
-    font-family: 'Cormorant', sans-serif;
+.faq-item{
+    width: 100%;
+    padding: 0px 16px;
 }
 
-@media screen and (min-width: 1024px) {
-    .nos-realisations-banner{
-        margin-top: 200px;
-    }
-
-    .nos-realisations-banner-light{
-        margin-top: 200px;
-    }
-
-    .nos-realisations-item{
-        padding: 5% 6%;
-    }
-
-    .item-overlay{
-        transition: all 0.5s ease;
-        color: rgba(255, 255, 255, 0.87);
-    }
-
-    .nos-realisations-item:hover .item-overlay{
-        transform: scale(1.5);
-    }
-
-    .nos-realisations-item>img{
-        transition: all 0.5s ease;
-    }
-
-    .nos-realisations-item:hover>img{
-        filter: brightness(0.8);
-        transform: scale(1.05);
-    }
+.faq-question{
+    padding: 32px;
+    font-size: 1.618rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #050d28;
 }
+
+.faq-reponse{
+    width: 100%;
+    padding: 32px;
+    line-height: 32px;
+    background-color:#091540;
+    box-sizing: border-box;
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    transition: 0.5s ease;
+}
+
+.faq-reponse-active{
+    padding: 32px;
+    height: auto;
+}
+
 
 
 /* ////////////////////////////////// NOS OFFRES PAGE /////////////////////////////////////////////////////////////// */
@@ -859,7 +790,7 @@ footer>h3 {
     align-items: center;
     gap: 50px;
     padding: 8%;
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.02);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -907,7 +838,7 @@ footer>h3 {
 }
 
 .nos-offres-item>button {
-    padding: 8px 16px;
+    padding: 16px 32px;
     border-radius: 2em;
     transition: all 0.3s;
     background-image: linear-gradient(-225deg, #ee2f9b 0%, #b35cf9 52%, #3737f6 100%);
@@ -990,6 +921,7 @@ footer>h3 {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
