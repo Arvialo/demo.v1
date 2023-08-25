@@ -46,15 +46,6 @@ function Footer() {
             Contactez-nous
           </h2>
         </div>
-        <div
-          className={classNames(
-            "footer-end",
-            isLight ? "light-theme-footer-end" : ""
-          )}
-        >
-          <p>c 2023</p>
-          <p>Agence Web Arion. Tous droits réservés</p>
-        </div>
       </footer>
     </>
   );

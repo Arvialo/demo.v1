@@ -115,13 +115,19 @@ li{
 nav{
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
     gap: 1.5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.618rem;
     letter-spacing: 0.3px;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(-225deg, #5d123c 0%, #2a123d 52%, #3535a2 100%);
 }
 
 nav>h3{
@@ -135,10 +141,10 @@ nav>h3{
 }
 
 .nav-item-button{
-    padding: 8px;
-    border-radius: 2em;
+    padding: 16px 32px;
+    border-radius: 5px;
     background-color: white;
-    color: rgba(5, 0, 98, 1);
+    color: #091540;;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -175,13 +181,30 @@ nav>h3{
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: #50A7C2;
     padding: 0%;
     margin: 0%;
+    transform: translateY(0%);
+    transition: all 0.5s;
 }
 
 .hidden {
-    display: none;
+    transform: translateY(-100%);
+}
+
+@media screen and (min-width: 768px) {
+   nav{
+    height: auto;
+    position: inherit;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: initial;
+    font-size: inherit;
+   }
+
+   .hidden{
+    transform: translateY(0);
+   }
 }
 
 @media screen and (min-width: 1024px) {
@@ -201,10 +224,9 @@ nav>h3{
 /* ///////////////////////////// FOOTER //////////////////////////////////////////////////// */
 
 footer {
-    margin-top: 45%;
+    margin-top: 160px;
     background-color: rgba(255, 255, 255, 0.01);
-    padding-top: 32px;
-    padding-bottom: 0%;
+    padding: 32px 0px;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
@@ -273,7 +295,7 @@ footer>h3 {
 
 @media screen and (min-width: 1024px) {
     footer{
-        margin-top: 10%;
+        margin-top: 160px;
         padding-top: 40px;
     }
     
@@ -293,7 +315,29 @@ footer>h3 {
 
 /* //////////////////////////////////// FIN FOOTER ////////////////////////////////////////////////////////// */
 
+/* //////////////////////////////////////PAGE TRANSITION ////////////////////////////////////////////////////////::: */
 
+.page-transition{
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(-225deg, #5d123c 0%, #2a123d 52%, #3535a2 100%);
+    color: white;
+    z-index: 999;
+}
+
+.page-transition-top{
+    top: 0;
+}
+
+.page-transition-bottom {
+    bottom: 0;
+}
 
 
 /* /////////////////////    HERO BANNER MOBILE /////////////////////////////////////// */
@@ -547,7 +591,6 @@ footer>h3 {
     gap: 16px;
     padding: 32px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
     justify-self: center;
 }
@@ -622,6 +665,7 @@ footer>h3 {
 
     .nos-services-image-item {
         width: inherit;
+        background-color: rgba(255, 255, 255, 0.05);
     }
 
     .nos-services-texte{
@@ -672,16 +716,56 @@ footer>h3 {
 /* //////////////////////////////////////// NOS REALISATIONS /////////////////////////////////////// */
 
 
-.nos-realisations-banner{
-    
+.real-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 128px;
 }
 
-.nos-realisations-banner>img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+.real-section img{
+    height: 400px;
+    width: auto;
+    transform: translateX(24px);
+    z-index: -1;
 }
+
+.real-section>.nos-services-texte{
+    align-self: flex-start;
+    padding: 0px 16px;
+}
+
+.real-section h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.small-btn{
+    padding: 16px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .real-section>.nos-services-texte{
+        align-self: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .real-section img{
+        height: 600px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.real-section {
+    margin-top: 200px;
+}
+}
+
 
 /* ////////////////////////////////////////// FAQ //////////////////////////////////////////////////////////// */
 
